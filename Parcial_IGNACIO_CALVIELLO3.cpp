@@ -17,22 +17,26 @@ int main()
     cout << " ingrese un numero (mayor a 15) " <<endl;
     cin >> numero;
 
-    for(int i = 1; i > 0; i--)
+    for(int i = 0; i <= numero; i++)
     {
-        if(i % == 3)
+        if(i % 3 == 0)
         {
             cout << " Fizz " << endl;
         }
-        else if(i % == 5)
+        else if(i % 5 == 0)
         {
             cout << " Buzz " << endl;
         }
-        else if(i % == 3 && i % == 5)
+        else if(i % 3 == 0 && i % 5 == 0)
         {
             cout << " FizzBuzz " <<endl;
+        }else{
+            cout << i << endl;
         }
     }
 
 
     return 0;
 }
+
+
